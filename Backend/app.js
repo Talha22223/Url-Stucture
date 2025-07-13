@@ -17,7 +17,7 @@ app.use(cors({
     'http://localhost:5173', 
     'http://localhost:5174', 
     'http://localhost:5175',
-    'https://your-app-name.vercel.app', // Add your Vercel domain
+    'https://url-shorter-doie8camf-m-talha-waris-projects.vercel.app',
     process.env.FRONTEND_URL || 'http://localhost:5173'
   ],
   credentials: true
