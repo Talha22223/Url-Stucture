@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "url-shorter",
   "builds": [
     {
       "src": "Frontend/package.json",
@@ -24,11 +23,6 @@
       "dest": "Frontend/dist/$1"
     }
   ],
-  "functions": {
-    "Backend/app.js": {
-      "maxDuration": 30
-    }
-  },
   "env": {
     "NODE_ENV": "production"
   },
