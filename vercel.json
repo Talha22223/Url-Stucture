@@ -1,12 +1,37 @@
 {
   "version": 2,
+  "name": "url-shorter",
   "builds": [
     {
-      "src": "package.json",
+      "src": "Frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "Backend/app.js",
+      "use": "@vercel/node"
     }
-  ]
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "Backend/app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Frontend/dist/$1"
+    }
+  ],
+  "functions": {
+    "Backend/app.js": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "installCommand": "cd Frontend && npm install",
+  "buildCommand": "cd Frontend && npm run build"
 }

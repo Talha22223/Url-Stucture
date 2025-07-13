@@ -4,11 +4,9 @@
 
 ### 1. Push to GitHub
 ```bash
-# If you haven't already, create a GitHub repository
-# Push your code to GitHub
-git remote add origin https://github.com/YOUR_USERNAME/url-shortener.git
-git branch -M main
-git push -u origin main
+# Your GitHub repository is already set up at:
+# https://github.com/Talha22223/Url-Stucture.git
+# Code has been pushed successfully!
 ```
 
 ### 2. Deploy on Vercel
