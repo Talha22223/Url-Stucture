@@ -1,0 +1,12 @@
+{
+  "name": "url-shortener-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd Frontend && npm run build",
+    "start": "cd Backend && npm start"
+  },
+  "workspaces": [
+    "Frontend",
+    "Backend"
+  ]
+}
