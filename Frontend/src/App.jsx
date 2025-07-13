@@ -69,7 +69,7 @@ const App = () => {
         headers.Authorization = `Bearer ${token}`
       }
 
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/create`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://url-shorter-dgevlytzx-m-talha-waris-projects.vercel.app'}/api/create`, {
         method: 'POST',
         headers,
         body: JSON.stringify({ url }),
@@ -114,7 +114,7 @@ const App = () => {
 
     try {
       const endpoint = authMode === 'login' ? 'login' : 'signup'
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/auth/${endpoint}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://url-shorter-dgevlytzx-m-talha-waris-projects.vercel.app'}/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
